@@ -10,7 +10,7 @@ import javax.persistence.*;
 @ToString(of = {"id", "username", "age"})       // 연관관계는 안하는게 좋음
 public class Member {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue
     @Column(name = "member_id")
     private Long id;
     private String username;
